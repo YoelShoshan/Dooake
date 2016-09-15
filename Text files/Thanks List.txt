@@ -1,0 +1,12 @@
+seith - for MD5 -> Maya plugin
+
+
+DTag - helped alot in coding / engine design
+Skynet - helped me alot in my previous engine, when i create the q3 clone
+
+
+beta testers:
+lior becker
+eyal shalev
+assaf z.
+cade (testing + mental support :) )

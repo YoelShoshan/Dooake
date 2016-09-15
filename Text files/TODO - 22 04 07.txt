@@ -1,0 +1,31 @@
+* fix shadow mapping like cade mentioned
+
+* add depth test to the scissor testing
+
+* make ragdoll for the death sequence (talk to cade)
+
+* TODO: right now, if a post-process triggering or post-process using material is spotted, simply all of the post processing is done. This isn't very efficient, since maybe only Blooming is needed, and some other effect not.
+
+* add md5 optimization!!!
+
+* fix the pixel allignment in post processing effects (fullscreen quad render)
+
+* add to all managers consideration of cases that they get NULL as name
+
+* implement touching
+
+* when projectile enter the teleporter they seem to come out wrong
+
+* i seem to not close utm files
+
+* add error/message in case there's no material defenition in particle system
+
+* play around with card/system memory settings flags for Index/Vertex buffers!
+
+*. Add transmition of jumppad event (to trigger sound)
+
+*. Compact the messages (perhaps compress them)
+
+*. Implement UDP hole punching.
+
+* 

@@ -1,0 +1,94 @@
+
+idle
+walk
+run
+jump
+land
+attack
+pain
+taunt
+
+
+///////torso: action > walk > back > turnlef > turnright > idle
+///////legs: walk > back > turnleft > turnright > action > idle
+
+        0   1         2             3    4    5    6
+legs: 
+******
+
+
+0 pain
+1 idle
+2 attack_1
+3 attack_2
+4 walk
+5 walk_back 
+6 strafe_left
+7 strafe_right
+8 strafe_walk_left
+9 strafe_walk_right
+10 rotate_left
+11 rotate_right
+12 run
+13 run_back
+14 jump
+15 midair
+16 land
+
+torso:
+******
+0 walk
+1 walk_back 
+2 strafe_left
+3 strafe_right
+4 strafe_walk_left
+5 strafe_walk_right
+6 rotate_left
+7 rotate_right
+8 run
+9 run_back
+10 idle
+11 pain
+12 jump
+13 midair
+14 land
+15 attack_1
+16 attack_2
+
+
+
+
+
+// hellnight character file
+
+mesh "MD5/hellknight/hellknight.md5mesh"
+
+
+channel torso					 *waist 
+channel legs					 *hips body body2 origin SPINNER 
+
+
+anim "MD5/hellknight/idle2.md5anim" idle legsPrio 0 torsoPrio 0
+
+// remove this ///////////////////////////////////////////////////////////////////////
+//anim "MD5/hellknight/turret_attack.md5anim" attack
+//anim "MD5/hellknight/leftslash.md5anim" attack
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+anim "MD5/hellknight/walk7.md5anim" walk  legsPrio 10 torsoPrio 1
+anim "MD5/hellknight/walk7.md5anim" run    legsPrio 11 torsoPrio 1
+anim "MD5/hellknight/walk7.md5anim" jump legsPrio 12 torsoPrio 1
+anim "MD5/hellknight/walk7.md5anim" land  legsPrio 13 torsoPrio 1
+
+anim "MD5/hellknight/turret_attack.md5anim" attack legsPrio 1 torsoPrio 10
+anim "MD5/hellknight/leftslash.md5anim" attack
+anim "MD5/hellknight/range_attack2.md5anim" attack
+
+anim "MD5/hellknight/roar1.md5anim" taunt
+
+anim "MD5/hellknight/headpain.md5anim" pain
+
+
+
+
+

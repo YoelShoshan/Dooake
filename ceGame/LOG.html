@@ -1,0 +1,1090 @@
+<html><head><title>ZeDuS Engine Log File</title></head><body><font face=Arial size=5 color=#000099><b><u>ZeDuS Engine Log File</u></b></font><br>
+<font face=Arial size=4 color=#000000><b>CLogFile::Logging process started (Engine v1.34).</b></font><br>
+<font face=Arial size=4 color=#000000><b>*****************************************</b></font><br>
+<font face=Arial size=4 color=#000000><b> </b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init::Adding AutoUniforms Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Timer...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of Timer Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Profiler...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of Profiler Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing API:</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Graphics API Used: Direct3D</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Renderer Backend:</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Renderer done.:</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init::Initing API Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Texture Manager...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of Texture Manager Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Shader Program Manager...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of Shader Program ManagerFinished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Material Manager...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of Material Manager Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Direct Input...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of Direct Input Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Particle System Manager...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of Particle System Manager Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Static Model Manager...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of Static Model Manager Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing MD5 Manager...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of MD5 Manager Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Setting Config...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init::Setting Config Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Renderer-FrontEnd...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of Renderer-FrontEnd Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing FMod based Sound API</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::FMod based Sound API initialization done.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CEngine::Init::Initing Sound Manager...</b></font><br>
+<font face=Arial size=4 color=#009900><b>////CEngine::Init:: Inititialization of Sound Manager Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Vertex Program: cgShaders/BasicTextureVP.cg</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/BasicTextureFP_AMBIENT.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/cursor2.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/crosshair1.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/dooake1.jpg material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/HostGameON.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/HostGameOFF.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/Cross.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/JoinGameON.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/JoinGameOFF.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/LocalGameON.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/LocalGameOFF.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/LOcalGameOFF.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/quitDOWN.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/quitHOVER.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/quitUP.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/EndGame.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/HostMenuHead.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/Start!.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/Start!-hover.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/Stop-host!.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/Stop-host!-hover.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/re-host!.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/re-host!-hover.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/PleaseTypeServerIP.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/ChatMenu.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/OnFocusEditBox.mat mat file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/BasicTextureFP.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/OnFocusEditBox.mat mat file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SIMPLE_ALPHA_BLENDED_TEXTURE:GUI/PleaseTypePlayerName.tga material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/TestRenderDepth.mat mat file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Vertex Program: cgShaders/BasicTextureVP-ForDepthRendering.cg</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/BasicTextureFP-ForDepthRendering.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/TestRenderDepth.mat mat file Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>Hosting Started!</b></font><br>
+<font face=Arial size=4 color=#000000><b>Waiting for clients.</b></font><br>
+<font face=Arial size=3 color=#000099><b>Attempting to load:</b></font><font face=Arial size=3 color=#000000><b>Q3Maps/q3dm17.bsp</b></font><font face=Arial size=3 color=#000000><b>.</b></font><br>
+<font face=Arial size=3 color=#000000><b>Q3Maps/q3dm17.bsp</b></font><font face=Arial size=3 color=#000000><b> is </b></font><font face=Arial size=3 color=#009900><b>found.</b></font><br>
+<font face=Arial size=3 color=#000000><b>Creating Temp BSP data arrays:</b></font><font face=Arial size=4 color=#000000><b>{
+"_color" ".9 .9 1"
+"ambient" "7"
+"classname" "worldspawn"
+"message" "The Longest Yard"
+"music" "music/sonic5.wav"
+}
+{
+"classname" "ammo_bullets"
+"origin" "-208 776 344"
+}
+{
+"classname" "target_position"
+"targetname" "t95"
+"origin" "1900 64 628"
+}
+{
+"classname" "info_player_intermission"
+"target" "t95"
+"origin" "2112 64 616"
+"angle" "180"
+}
+{
+"origin" "280 64 1336"
+"noise" "sound/world/portal01.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"origin" "120 1052 328"
+"model" "models/mapobjects/teleporter/teleporter.md3"
+"classname" "misc_model"
+"angle" "315"
+}
+{
+"model" "*1"
+"target" "t33"
+"classname" "trigger_teleport"
+}
+{
+"model" "*2"
+"target" "t33"
+"classname" "trigger_teleport"
+}
+{
+"model" "*3"
+"target" "t33"
+"classname" "trigger_teleport"
+}
+{
+"model" "*4"
+"classname" "trigger_push"
+"target" "t93"
+}
+{
+"classname" "ammo_rockets"
+"origin" "368 600 344"
+}
+{
+"origin" "672 64 344"
+"classname" "item_armor_body"
+}
+{
+"origin" "-258 -656 412"
+"light" "70"
+"classname" "light"
+}
+{
+"model" "*5"
+"target" "t91"
+"classname" "trigger_push"
+}
+{
+"classname" "target_position"
+"targetname" "t81"
+"origin" "796 732 -132"
+}
+{
+"classname" "info_player_intermission"
+"target" "t81"
+"origin" "2752 -448 584"
+}
+{
+"classname" "target_remove_powerups"
+"targetname" "t80"
+"origin" "1264 696 -1504"
+}
+{
+"model" "*6"
+"classname" "trigger_multiple"
+"target" "t80"
+}
+{
+"classname" "ammo_shells"
+"origin" "-448 -1152 592"
+}
+{
+"model" "*7"
+"classname" "trigger_multiple"
+"target" "t70"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "5"
+"noise" "sound/world/drone6.wav"
+"origin" "-1024 64 384"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/portal01.wav"
+"origin" "120 -924 384"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "270"
+"spawnflags" "4"
+"origin" "488 1096 352"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "5"
+"angle" "90"
+"origin" "488 -968 352"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "135"
+"origin" "488 504 352"
+"spawnflags" "4"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "4"
+"angle" "360"
+"origin" "-288 -376 24"
+}
+{
+"classname" "ammo_slugs"
+"origin" "1072 160 16"
+}
+{
+"classname" "item_armor_combat"
+"spawnflags" "1"
+"origin" "-384 64 824"
+"wait" "30"
+}
+{
+"classname" "weapon_rocketlauncher"
+"origin" "288 672 344"
+}
+{
+"classname" "item_health_mega"
+"spawnflags" "1"
+"origin" "192 64 816"
+"wait" "45"
+}
+{
+"classname" "weapon_railgun"
+"origin" "2432 64 272"
+}
+{
+"classname" "misc_teleporter_dest"
+"spawnflags" "4"
+"angle" "180"
+"targetname" "t33"
+"origin" "816 64 348"
+}
+{
+"model" "*8"
+"dmg" "9999"
+"spawnflags" "12"
+"classname" "trigger_hurt"
+}
+{
+"targetname" "t91"
+"origin" "-84 -728 728"
+"classname" "target_position"
+}
+{
+"targetname" "t86"
+"origin" "192 64 824"
+"classname" "target_position"
+}
+{
+"origin" "116 64 1296"
+"classname" "item_quad"
+"wait" "45"
+}
+{
+"spawnflags" "1"
+"origin" "-384 -256 728"
+"classname" "item_armor_shard"
+}
+{
+"spawnflags" "1"
+"classname" "item_armor_shard"
+"origin" "-384 -160 768"
+}
+{
+"spawnflags" "1"
+"origin" "-384 -64 800"
+"classname" "item_armor_shard"
+}
+{
+"spawnflags" "1"
+"classname" "item_armor_shard"
+"origin" "-384 384 728"
+}
+{
+"spawnflags" "1"
+"origin" "-384 288 768"
+"classname" "item_armor_shard"
+}
+{
+"spawnflags" "1"
+"classname" "item_armor_shard"
+"origin" "-384 192 800"
+}
+{
+"classname" "light"
+"light" "300"
+"origin" "-864 64 704"
+}
+{
+"origin" "-704 256 848"
+"light" "550"
+"classname" "light"
+}
+{
+"classname" "light"
+"light" "550"
+"origin" "-704 -128 848"
+}
+{
+"classname" "light"
+"light" "400"
+"origin" "416 64 1312"
+}
+{
+"origin" "416 288 1312"
+"light" "400"
+"classname" "light"
+}
+{
+"classname" "light"
+"light" "400"
+"origin" "416 -160 1312"
+}
+{
+"classname" "light"
+"light" "400"
+"origin" "192 288 1312"
+}
+{
+"origin" "192 -160 1312"
+"light" "400"
+"classname" "light"
+}
+{
+"origin" "1072 -32 16"
+"classname" "ammo_slugs"
+}
+{
+"origin" "160 -896 600"
+"spawnflags" "4"
+"angle" "180"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "-288 504 24"
+"angle" "360"
+"spawnflags" "4"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "488 -376 352"
+"angle" "225"
+"classname" "info_player_deathmatch"
+"spawnflags" "4"
+}
+{
+"origin" "1280 64 384"
+"noise" "sound/world/evil.wav"
+"spawnflags" "5"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"noise" "sound/world/growl3.wav"
+"origin" "1280 64 -112"
+"random" "15"
+"wait" "20"
+}
+{
+"origin" "1536 64 -112"
+"noise" "sound/world/growl2.wav"
+"classname" "target_speaker"
+"random" "10"
+"wait" "25"
+}
+{
+"classname" "target_speaker"
+"noise" "sound/world/growl3.wav"
+"origin" "1792 64 -112"
+"random" "12"
+"wait" "20"
+}
+{
+"origin" "2048 64 -112"
+"noise" "sound/world/growl2.wav"
+"classname" "target_speaker"
+"random" "7"
+"wait" "23"
+}
+{
+"spawnflags" "8"
+"origin" "96 -1152 -120"
+"noise" "*falling1.wav"
+"classname" "target_speaker"
+"targetname" "t70"
+}
+{
+"origin" "292 -540 344"
+"classname" "weapon_rocketlauncher"
+}
+{
+"origin" "-576 -1088 592"
+"classname" "weapon_shotgun"
+}
+{
+"classname" "light"
+"light" "1000"
+"origin" "2384 64 720"
+}
+{
+"classname" "misc_model"
+"origin" "1133 -43 0"
+"model" "models/mapobjects/kmlamp1.md3"
+}
+{
+"model" "models/mapobjects/kmlamp1.md3"
+"origin" "1133 173 0"
+"classname" "misc_model"
+}
+{
+"model" "*9"
+"classname" "trigger_push"
+"target" "t89"
+}
+{
+"model" "*10"
+"classname" "trigger_push"
+"target" "t88"
+}
+{
+"model" "*11"
+"classname" "trigger_push"
+"target" "t87"
+}
+{
+"classname" "target_position"
+"origin" "-384 208 836"
+"targetname" "t88"
+}
+{
+"classname" "target_position"
+"origin" "1288 456 768"
+"targetname" "t93"
+}
+{
+"origin" "-192 64 1540"
+"classname" "target_position"
+"targetname" "t87"
+}
+{
+"origin" "1288 -328 768"
+"classname" "target_position"
+"targetname" "t94"
+}
+{
+"origin" "-384 -80 836"
+"classname" "target_position"
+"targetname" "t89"
+}
+{
+"classname" "light"
+"light" "750"
+"origin" "-568 -1112 1022"
+}
+{
+"model" "*12"
+"target" "t92"
+"classname" "trigger_push"
+}
+{
+"targetname" "t92"
+"classname" "target_position"
+"origin" "1856 64 640"
+}
+{
+"classname" "item_health_large"
+"origin" "608 -568 16"
+}
+{
+"origin" "608 696 16"
+"classname" "item_health_large"
+}
+{
+"classname" "light"
+"light" "10"
+"origin" "1092 172 80"
+}
+{
+"origin" "1132 212 80"
+"light" "10"
+"classname" "light"
+}
+{
+"classname" "light"
+"light" "10"
+"origin" "1172 172 80"
+}
+{
+"origin" "1092 -44 80"
+"light" "10"
+"classname" "light"
+}
+{
+"origin" "1172 -44 80"
+"light" "10"
+"classname" "light"
+}
+{
+"classname" "light"
+"light" "10"
+"origin" "1132 -84 80"
+}
+{
+"classname" "misc_model"
+"model" "models/mapobjects/kmlamp1.md3"
+"origin" "-631 -1175 576"
+}
+{
+"origin" "-272 -512 352"
+"angle" "360"
+"spawnflags" "4"
+"classname" "info_player_deathmatch"
+}
+{
+"classname" "misc_model"
+"model" "models/mapobjects/kmlamp1.md3"
+"origin" "-283 -656 352"
+}
+{
+"origin" "-568 1240 1022"
+"light" "750"
+"classname" "light"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "4"
+"angle" "360"
+"origin" "-272 640 352"
+}
+{
+"origin" "-281 783 352"
+"model" "models/mapobjects/kmlamp1.md3"
+"classname" "misc_model"
+}
+{
+"origin" "-631 1305 576"
+"model" "models/mapobjects/kmlamp1.md3"
+"classname" "misc_model"
+}
+{
+"origin" "-448 1280 592"
+"classname" "ammo_shells"
+}
+{
+"classname" "weapon_shotgun"
+"origin" "-576 1216 592"
+}
+{
+"classname" "light"
+"light" "75"
+"origin" "-600 1304 656"
+}
+{
+"model" "*13"
+"classname" "trigger_push"
+"target" "t90"
+}
+{
+"origin" "-88 852 728"
+"classname" "target_position"
+"targetname" "t90"
+}
+{
+"origin" "368 -464 344"
+"classname" "ammo_rockets"
+}
+{
+"origin" "2560 -256 720"
+"light" "1000"
+"classname" "light"
+}
+{
+"classname" "light"
+"light" "1000"
+"origin" "2560 384 720"
+}
+{
+"model" "*14"
+"classname" "trigger_push"
+"target" "t86"
+}
+{
+"model" "*15"
+"classname" "trigger_push"
+"target" "t85"
+}
+{
+"model" "*16"
+"classname" "trigger_push"
+"target" "t82"
+}
+{
+"model" "*17"
+"classname" "trigger_push"
+"target" "t84"
+}
+{
+"model" "*18"
+"classname" "trigger_push"
+"target" "t83"
+}
+{
+"origin" "192 -320 604"
+"classname" "target_position"
+"targetname" "t83"
+}
+{
+"origin" "-436 64 1152"
+"classname" "target_position"
+"targetname" "t85"
+}
+{
+"classname" "target_position"
+"origin" "192 448 604"
+"targetname" "t82"
+}
+{
+"origin" "560 64 580"
+"classname" "target_position"
+"targetname" "t84"
+}
+{
+"origin" "120 1052 384"
+"noise" "sound/world/portal01.wav"
+"classname" "target_speaker"
+"spawnflags" "1"
+}
+{
+"classname" "light"
+"light" "70"
+"origin" "-282 -632 412"
+}
+{
+"origin" "-310 -656 412"
+"light" "70"
+"classname" "light"
+}
+{
+"classname" "light"
+"light" "70"
+"origin" "-282 -680 412"
+}
+{
+"classname" "light"
+"light" "70"
+"origin" "-256 784 412"
+}
+{
+"origin" "-280 808 412"
+"light" "70"
+"classname" "light"
+}
+{
+"classname" "light"
+"light" "70"
+"origin" "-308 784 412"
+}
+{
+"origin" "-280 760 412"
+"light" "70"
+"classname" "light"
+}
+{
+"origin" "-632 1336 656"
+"light" "75"
+"classname" "light"
+}
+{
+"classname" "light"
+"light" "75"
+"origin" "-664 1304 656"
+}
+{
+"origin" "-632 1272 656"
+"light" "75"
+"classname" "light"
+}
+{
+"classname" "light"
+"light" "75"
+"origin" "-600 -1176 656"
+}
+{
+"origin" "-632 -1144 656"
+"light" "75"
+"classname" "light"
+}
+{
+"classname" "light"
+"light" "75"
+"origin" "-664 -1176 656"
+}
+{
+"origin" "-632 -1208 656"
+"light" "75"
+"classname" "light"
+}
+{
+"origin" "512 64 816"
+"noise" "sound/world/drone6.wav"
+"spawnflags" "5"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "5"
+"noise" "sound/world/drone6.wav"
+"origin" "1536 832 512"
+}
+{
+"origin" "1536 -704 512"
+"noise" "sound/world/drone6.wav"
+"spawnflags" "5"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "5"
+"noise" "sound/world/drone6.wav"
+"origin" "256 1280 816"
+}
+{
+"origin" "256 -1152 816"
+"noise" "sound/world/drone6.wav"
+"spawnflags" "5"
+"classname" "target_speaker"
+}
+{
+"classname" "item_health"
+"origin" "2528 368 272"
+}
+{
+"classname" "item_health"
+"origin" "2528 -240 272"
+}
+{
+"classname" "item_health_large"
+"origin" "152 -1000 592"
+}
+{
+"origin" "152 1128 592"
+"classname" "item_health_large"
+}
+{
+"model" "*19"
+"target" "t94"
+"classname" "trigger_push"
+}
+{
+"classname" "misc_model"
+"model" "models/mapobjects/teleporter/teleporter.md3"
+"origin" "120 -924 328"
+"angle" "45"
+}
+{
+"angle" "180"
+"classname" "misc_model"
+"model" "models/mapobjects/teleporter/teleporter.md3"
+"origin" "288 64 1280"
+}
+{
+"origin" "280 64 1336"
+"_color" "0.033149 0.066432 0.099347"
+"light" "600"
+"classname" "light"
+}
+{
+"origin" "-208 -648 344"
+"classname" "ammo_bullets"
+}
+{
+"classname" "info_player_deathmatch"
+"spawnflags" "4"
+"angle" "270"
+"origin" "192 656 24"
+}
+{
+"origin" "200 -552 24"
+"angle" "90"
+"spawnflags" "4"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "2606 61 456"
+"angle" "180"
+"model" "models/mapobjects/lamps/bot_lamp2.md3"
+"classname" "misc_model"
+}
+{
+"origin" "2546 62 428"
+"light" "200"
+"_color" "1.000000 0.837321 0.971292"
+"classname" "light"
+}
+{
+"origin" "-48 -948 532"
+"model" "models/mapobjects/spotlamp/spotlamp.md3"
+"classname" "misc_model"
+"angle" "90"
+}
+{
+"origin" "-48 -772 352"
+"targetname" "t96"
+"classname" "target_position"
+}
+{
+"_color" "1.000000 0.795082 0.565574"
+"target" "t96"
+"classname" "light"
+"light" "250"
+"origin" "-48 -892 472"
+}
+{
+"classname" "light"
+"_color" "1.000000 0.837321 0.971292"
+"light" "30"
+"origin" "-50 -898 488"
+}
+{
+"origin" "-102 -878 496"
+"light" "30"
+"_color" "1.000000 0.837321 0.971292"
+"classname" "light"
+}
+{
+"classname" "light"
+"_color" "1.000000 0.837321 0.971292"
+"light" "30"
+"origin" "2 -886 496"
+}
+{
+"angle" "270"
+"classname" "misc_model"
+"model" "models/mapobjects/spotlamp/spotlamp.md3"
+"origin" "-48 1076 532"
+}
+{
+"classname" "target_position"
+"targetname" "t97"
+"origin" "-48 900 352"
+}
+{
+"origin" "-48 1020 472"
+"light" "250"
+"classname" "light"
+"target" "t97"
+"_color" "1.000000 0.795082 0.565574"
+}
+{
+"origin" "-50 1026 488"
+"light" "30"
+"_color" "1.000000 0.837321 0.971292"
+"classname" "light"
+}
+{
+"classname" "light"
+"_color" "1.000000 0.837321 0.971292"
+"light" "30"
+"origin" "-102 1006 496"
+}
+{
+"origin" "2 1014 496"
+"light" "30"
+"_color" "1.000000 0.837321 0.971292"
+"classname" "light"
+}
+</b></font><br>
+<font face=Arial size=3 color=#009900><b>Successful.</b></font><br>
+<font face=Arial size=3 color=#000000><b>Convertion to Vertex Buffers:</b></font><font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/PPL/BasicTextureFP_AMBIENT_ZERO_ALPHA.cg</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Vertex Program: cgShaders/PPL/PerPixelLightingVP.cg</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/PPL/PerPixelLightingFP.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/metalfloor_wall_10 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_floor/diamond2c material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/metalblack03 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_support/cable material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/c_met5_2 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_trim/pewter_shiney material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_light/baslt4_1_4k material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/sfx/launchpad_diamond material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_light/lt2_8000 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/sfx/diamond2cjumppad material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_trim/border11b material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/metaltech13final material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/metaltech12final material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/atech1_a material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_trim/basemetalsupport material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/steed1gf material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/metalfloor_wall_15 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/c_met7_2 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_trim/border11light material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_trim/spiderbit4 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_light/lt2_2000 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/steed1ge material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/atech1_e material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/metfloor_block_3 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/metaltech06final material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/sfx/pentfloor_diamond2c material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/skies/blacksky material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/metalfloor_wall_15ow material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_floor/diamond2c_ow material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_light/light5_5k material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/main_q3abanner material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/sfx/beam material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/PP/HeatHaze.mat mat file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Vertex Program: cgShaders/PP/HeatHaze_VP.cg</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/PP/HeatHaze_FP.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/PP/HeatHaze.mat mat file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/teleporter/teleporter material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/teleporter/teleporter_edge material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/teleporter/pad material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/teleporter/transparency material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/teleporter/widget material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/kmlamp1 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/kmlamp_white material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/lamps/flare03 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/lamps/bot_lamp material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/lamps/bot_lamp2 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/lamps/bot_flare2 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/lamps/bot_flare material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/lamps/bot_wing material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/spotlamp/spotlamp material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/spotlamp/spotlamp_l material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:models/mapobjects/spotlamp/beam material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/gothic_wall/iron01_e_flicker material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/common/caulk material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/gothic_block/blocks17 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/common/nodrop material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/atech1_d material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_wall/metaltech05final material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/gothic_wall/iron01_c2 material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/base_support/aluminum material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/gothic_trim/metalsupport4b material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/common/nodraw material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/common/clip material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/common/weapclip material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/common/nodrawnonsolid material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/sfx/spawn_floord2c material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:flareShader material Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Auto generated SHADOW MAPPED - LIGHT PASSES BASED:textures/common/trigger material Finished.</b></font><br>
+<font face=Arial size=3 color=#009900><b>Successful.</b></font><br>
+<font face=Arial size=4 color=#448800><b>CStaticModel::Load3DS loading Models/shipping_crates.3ds model...</b></font><br>
+<font face=Arial size=4 color=#448800><b>////CStaticModel::Load3DS loading of Models/shipping_crates.3ds model Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/Characters/vagary.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/Characters/vagary.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/ParticleSystems/hellholefire.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Vertex Program: cgShaders/PS/BasicTextureVP_Colored.cg</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/PS/BasicTextureFP_Colored_NO_BLOOM.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/ParticleSystems/hellholefire.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CParticleSystem_Shared::Attempting to load Particle System script [ParticleSystems/TeleporterHeatHaze.ps].</b></font><br>
+<font face=Arial size=4 color=#000000><b>CParticleSystem_Shared::Succesfully loaded Particle System script [ParticleSystems/TeleporterHeatHaze.ps].</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials\PP\HeatHaze.mat mat file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials\PP\HeatHaze.mat mat file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials\ParticleSystems\fire1.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/PS/BasicTextureFP_Colored.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials\ParticleSystems\fire1.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/bricks-PM.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Vertex Program: cgShaders/PM/ParallaxMappingVP.cg</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/PM/ParallaxMappingFP.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/bricks-PM.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/Characters/marine_body.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/Characters/marine_body.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/Characters/vagary_sac.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/Characters/vagary_sac.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#440088><b>CMD5Inst::LoadCharacterFile loading MD5/mancubus/mancubus.chr character file...</b></font><br>
+<font face=Arial size=4 color=#000099><b>CMD5Mesh::Load loading MD5/mancubus/mancubus.md5mesh md5mesh file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/Characters/mancubus.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/Characters/mancubus.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#000099><b>////CMD5Mesh::Load loading of MD5/mancubus/mancubus.md5mesh md5mesh file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/multifire1.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/multifire1.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/attack1.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/attack1.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk_back.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk_back.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk_back.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk_back.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/walk.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/walk.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/idle.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/idle.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/mancubus/pain_chest.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/mancubus/pain_chest.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#440088><b>////CMD5Inst::LoadCharacterFile loading of MD5/mancubus/mancubus.chr character file Finished.</b></font><br>
+<font face=Arial size=4 color=#440088><b>CMD5Inst::LoadCharacterFile loading MD5/vagary/vagary.chr character file...</b></font><br>
+<font face=Arial size=4 color=#000099><b>CMD5Mesh::Load loading MD5/vagary/vagary.md5mesh md5mesh file...</b></font><br>
+<font face=Arial size=4 color=#000099><b>////CMD5Mesh::Load loading of MD5/vagary/vagary.md5mesh md5mesh file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/melee2.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/melee2.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/melee1.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/melee1.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/evade_left.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/evade_left.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/evade_right.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/evade_right.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/walk3.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/walk3.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/alert_idle.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/alert_idle.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>CMD5Anim::Load loading MD5/vagary/chestpain.md5anim md5anim file...</b></font><br>
+<font face=Arial size=4 color=#0000EE><b>////CMD5Anim::Load loading of MD5/vagary/chestpain.md5anim md5anim file Finished.</b></font><br>
+<font face=Arial size=4 color=#440088><b>////CMD5Inst::LoadCharacterFile loading of MD5/vagary/vagary.chr character file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/green.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Vertex Program: cgShaders/onecolorVP.cg</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/onecolorFP.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/green.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/PP/Bloom.mat mat file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/PP/Bloom_Final_Add_FP.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/PP/Bloom.mat mat file Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>Game Started.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CParticleSystem_Shared::Attempting to load Particle System script [ParticleSystems/cast.ps].</b></font><br>
+<font face=Arial size=4 color=#000000><b>CParticleSystem_Shared::Succesfully loaded Particle System script [ParticleSystems/cast.ps].</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials\ParticleSystems\magic.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials\ParticleSystems\magic.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#448800><b>CStaticModel::Load3DS loading Models/earth.3ds model...</b></font><br>
+<font face=Arial size=4 color=#448800><b>////CStaticModel::Load3DS loading of Models/earth.3ds model Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CParticleSystem_Shared::Attempting to load Particle System script [ParticleSystems/monsters/blue.ps].</b></font><br>
+<font face=Arial size=4 color=#000000><b>CParticleSystem_Shared::Succesfully loaded Particle System script [ParticleSystems/monsters/blue.ps].</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/ParticleSystems/magic.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/ParticleSystems/magic.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/ParticleSystems/green_magic.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/ParticleSystems/green_magic.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CParticleSystem_Shared::Attempting to load Particle System script [ParticleSystems/monsters/rocket.ps].</b></font><br>
+<font face=Arial size=4 color=#000000><b>CParticleSystem_Shared::Succesfully loaded Particle System script [ParticleSystems/monsters/rocket.ps].</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/ParticleSystems/fire1-hazing.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/ParticleSystems/fire1-hazing.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/pp/Bloom_ScaleDown_BrightPass.mat mat file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/PP/BasicTexture_BrightPass_FP.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/pp/Bloom_ScaleDown_BrightPass.mat mat file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/PP/blur_3x3_PP_X.mat mat file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/PP/3x3blur_x_FP.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/PP/blur_3x3_PP_X.mat mat file Finished.</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials/PP/blur_3x3_PP_Y.mat mat file...</b></font><br>
+<font face=Arial size=4 color=#000000><b>Loading Fragment Program: cgShaders/PP/3x3blur_y_FP.cg</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials/PP/blur_3x3_PP_Y.mat mat file Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>CParticleSystem_Shared::Attempting to load Particle System script [ParticleSystems/explotion.ps].</b></font><br>
+<font face=Arial size=4 color=#000000><b>CParticleSystem_Shared::Succesfully loaded Particle System script [ParticleSystems/explotion.ps].</b></font><br>
+<font face=Arial size=4 color=#006699><b>CMaterial::Load loading Materials\ParticleSystems\hellholefire.utm utm file...</b></font><br>
+<font face=Arial size=4 color=#006699><b>////CMaterial::Load loading of Materials\ParticleSystems\hellholefire.utm utm file Finished.</b></font><br>
+<font face=Arial size=4 color=#000000><b>K.G. picked up Ammo 1.</b></font><br>
+<font face=Arial size=3 color=#000099><b>Freeing Quake 3 Arena BSP File:</b></font><font face=Arial size=3 color=#000099><b> </b></font><font face=Arial size=3 color=#009900><b>Successful.</b></font><br>

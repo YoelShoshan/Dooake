@@ -1,0 +1,35 @@
+//////////////////////////////////////////////////////////////////////////////////////
+// everything that starts with "//" is considered a comment and ignored !
+// Current demo binds:
+// 0 -> jump
+// 1 -> forward
+// 2 -> forward_right
+// 3 -> right
+// 4 -> right_backwards
+// 5 -> backwards
+// 6 -> backwards_left
+// 7 -> left
+// 8 -> left_forward
+//
+// as you can see the directions start from forward==1 and then continue clock wise
+//////////////////////////////////////////////////////////////////////////////////////
+
+// [button] [tag ID]  [keyboard key]
+//
+// [button] - is the button ID, must be between 0 and ButtonsNum-1
+// [tag ID] - in hex format, lower case
+// [keyboard key] - in decimal format (DirectInput key values)
+// from here it's the real data in this file:
+
+
+buttonsnum 9
+
+0 0xe007000012c01aa3 57 // (space bar)  THIS IS SPHERE BOTTOM TAG
+1 0x0000000000000001 22 // ('U')   
+2 0x0000000000000002 23 // ('I')
+3 0xE007000012C01A95 37 // ('K')        THIS IS RIGHT PUNCH
+4 0x0000000000000004 50 // ('M')   
+5 0x0000000000000005 49 // ('N')
+6 0x0000000000000006 48 // ('B')
+7 0xE007000012C01A93 35 // ('H')        THIS IS LEFT PUNCH
+8 0x0000000000000008 21 // ('Y')

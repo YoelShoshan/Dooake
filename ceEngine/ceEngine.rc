@@ -1,0 +1,110 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_STARTUP_DIALOG DIALOGEX 0, 0, 188, 208
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dooake Game Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,117,129,50,14
+    LTEXT           "Api Used:",IDC_STATIC,17,175,34,15,NOT WS_VISIBLE
+    CONTROL         "OpenGL",IDC_CHECK_OPENGL,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,176,39,8
+    CONTROL         "Direct3D",IDC_CHECK_D3D,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,188,39,8
+    LTEXT           "Effects:",IDC_STATIC,15,114,74,11,NOT WS_VISIBLE
+    CONTROL         "Depth Of Field",IDC_CHECK_DOF,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,15,130,68,8
+    CONTROL         "Render RTT Box",IDC_CHECK_REND_RTT_BOX,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,15,140,73,15
+    CONTROL         "Use Original Q3A Materials",IDC_FULL_FALLBACK_BOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,18,101,15
+    CONTROL         "Windowed",IDC_CHECK_WINDOWED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,34,77,14
+    LTEXT           "Resolution:",IDC_STATIC,14,59,38,8
+    COMBOBOX        IDC_COMBO1,57,58,110,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,57,92,110,61,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Fly Mode",IDC_FLY_MODE,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,15,158,79,10
+    LTEXT           "Map:",IDC_STATIC,31,91,18,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_STARTUP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

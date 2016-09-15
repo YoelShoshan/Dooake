@@ -1,0 +1,166 @@
+Prioritized:
+
+
+1. Eliminate the self-kill twice bug
+2. Q3dm4 deform vertices shader bug
+3. Eliminate the animation getting stuck bug
+4. Death indication
+5. Add cling sound on clients
+6. Send game score mode and parameters to clients
+-- f.e. time_limit and time left
+-- game end should NOT be triggered by clients, it should be triggered from server
+
+
+* Better shooting animation
+* Better death animation (hopefully ragdolls)
+
+
+
+---==== BUGS ====---
+
+* Client can't shoot at some point !!! add text message or something like that when out of ammo for debugging
+--- It's a bug in the AnimationController - an animation is stuck of 1.f and doesn't fade out
+--- Perhaps it's related to loopable <- happened also on not loopable.
+
+* Falling into death many times causes a double death on client
+--- Perhaps it's because client+master triggers death?
+
+* If two players have the same name on networked game everything goes wild ? (not sure that's true anymore)
+
+* Projectiles pass through portals on server but client doesn't see that - perhaps there's need for that message
+
+* After client is connected, Escape doesn't disconnect + bring him back to the main menu
+
+* GUI Bug - doesn't aim well on lower resolutions (seen on windowed)
+
+* Crash on exit
+
+ ---=== NETWORKING ===---
+
+* Disconnection should be handled correctly and information should be presented to the user 
+--- On both server<->client, client<->client
+
+* Version
+--- Show version
+--- Validate that clients have the same version as server
+
+---=== GAMEPLAY ===---
+
+* Message - Victory!
+----- Stop game and maybe fly through all spawn points or allow fly through while showing score board
+----- Use the downloaded winning mp3s =)
+
+* On client: Remember previously used server IP
+* Show indication of death
+----- Start with sound
+----- some visual indication
+----- eventually ragdoll
+
+* Add a queue of game messages, so they won't be at the same time
+
+
+* Collectables
+---- Relveant shape (Life/Mana)
+---- Different sound
+
+* Provide a choose character screen for both server/client
+* Provide an ingame choose map screen for the server
+
+* Game Modes:
+---- Frag Limit - Add 3/2/1 frags left
+
+* Server should decide map (and client should report if he doesn't have the map) - add options box (
+*** At first left/right arrow move between the options, after that also two arrow buttons
+
+* Windowed Mode - click on window restores exclusive focus, escape remove control
+* Alt-Tab
+
+* Choose default server IP on the game setting menu
+
+* Double-Death
+* Aim should focus on the ray-intersetion location at the point of trigger (Especially for mancubus)
+* Fix the shooting:
+--- Make sure that only the latest attack animation triggers work
+* Shoot should start immidiately and from the center of the screen (?)
+
+
+* Add Hebrew Text/Fonts - Stuff like "[winning_player_name] Totach!" and "[worst_score_player] - Yatsata Tuna!"
+
+* zlib - read the pk3 - File manager should always look first in actual directory and then in the pk3 (to allow overriding)
+
+---=== PHYSICS ===---
+
+* Add collision brushes to bezier patches
+* FIX in collision detection and response:
+--- jumping into corners
+--- stair climbing gives too much strength up
+
+---=== GRAPHICS ===---
+
+* In the case of Q3A shader scripts with the first pass being opaque, use PPL for that first pass
+* Add usage of static baked lightmap 
+* Consider the scripts sort value
+* Vertex Deformation
+* Profile and improve performance !!!!
+
+* Animation:
+
+make more generic 
+    * It's weird right now that you both need a fixed order and provide an animation type keyword
+    * perhaps allow animations priorities to be inserted in the chr file.
+
+* Seems like shader scripts for the center jump-pads at q3dm17 is missing some rgbgen functionality
+	
+* FIX shadows (shadows dissapear at some distance)
+
+* add scissor testing of depth as well !
+
+* add sun light
+
+* add specular blooming
+
+* remove rendering of renderables that aren't usefull like sky (and are time consuming...)
+
+* Fix PPL - there's a line in the middle of models that is messed up
+
+* change from the GetForceReBind() method inside texture into a method that also doesn't rebind in case of proxy RTTs.
+
+* perhaps make RTTs more flexible, and allow game coder to use "$Camera Whatever" as map
+  (that way he can choose a special reso for it)
+
+*  clean all the matrix code, now that i have same matrices for gl and d3d,
+i can stop having transpose stuff...
+
+* store ALL options of autouniforms inside the GraphicsAPI
+
+* notice when material sends autouniform that the shader doesn't need
+    OR when the shader needs something and the material doesn't provide it
+
+* add text to gl
+
+* add some feature to shaders, in order to only update parameters instead of rebinding the entire program
+
+---=== Done ===---
+
+*===Gameplay===* Implemented collision against bezier patches
+*===Networking===* Implemented udp punch-a-hole - server and client use the same port. This way only Server needs to use port forwarding
+*===Bugs===* Solved the broken local gameplay problem
+*===Gameplay===* Drastically lowered self damage
+*===GUI===* Much better chat
+*===Gameplay===* Added late client join into session
+*===Graphics===* Added a sin up/down movement for collectables
+*===Graphics===* Added centering of static loaded objects
+*===Bugs===* Removed the "Direct Hit" message when hit player is dying
+*===Networking===* Clients receieve server chosen map correctly
+*===Gameplay===* Increased the height of the player camera
+*===Gameplay===* added Time Limit game play mode
+*===Gameplay===* decreased collectable size and projectiles now don't explode on it
+*===Bugs===* added InitWeights of AnimationController - should hopefully solve the animation stuck problem (which prevents shooting)
+*===Graphics===* Combined Q3A shader scripts with my PPL code for textures that aren't scripts (plain images)
+*===Gameplay===* Added GamePlay messages 
+*===Gameplay===* --- Taken/Lost the lead
+*===Gameplay===* --- Remaining time (5/1 minute(s) left)
+*===Gameplay===* --- If match end time reached, and there's no unique winner there's a message "You are tied for the lead" and game ends with the first unique winner
+*===Gameplay===* Added out of body experience - pressing F9 makes you leave your body and fly around as a ghost (while leaving your physical body volurnable)
+
+

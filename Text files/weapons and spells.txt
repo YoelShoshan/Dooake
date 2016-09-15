@@ -1,0 +1,43 @@
+weapons:
+***********
+* rockets (MANCUBUS)
+
+* fireball
+
+* 
+
+
+
+
+
+
+magic spells/scrolls:
+***********************
+
+
+* path carving - like ice-man, carving a path in mid-air that you walk on. (maybe just alowes routing your landing)
+
+* shrink
+
+* many small spiders attack (VAGARY)
+
+* mines
+
+* ice - you can cast it on the floor and it becomes slippery
+
+* confusion - makes your cursor up/down become left/right and vice versa or just something else that is confusing...
+
+* darkness
+
+* shockwave (MANCUBUS)
+
+
+* shield
+
+misc collectable:
+*******************
+
+* life (little/medium/large)
+* mana
+* ammo
+

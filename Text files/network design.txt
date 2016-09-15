@@ -1,0 +1,65 @@
+TODO: add client class
+
+// informing the server that an event happened
+g_Server.OnEvent(SERVER_EVENT_ID, void* pData);
+
+// informing the game that an event happened
+g_Game.OnEvent(GAME_EVENT_ID, void* pData);
+
+***************************************************************************************************************
+// Connection Flow
+Client: Sends tClientJoinRequest
+Server: Send tServerAckData to the client
+Server: Send tUpdateClientStartGame to the client
+Client: Sends tCombatHelloServer - (that way server will know to associate sender address to Player Entity ID)
+Server: Updates all other clients with tUpdateClientInOtherClientJoin
+
+
+***************************************************************************************************************
+Ports:
+
+Client: 
+Send_Address_UDP = SERVER_PORT_NUM_UDP = 7000
+Receive_Address_UDP = SERVER_PORT_NUM_UDP+Client given ID = 7000+Client_ID
+
+
+
+
+// flow
+receieve_address = 7001 , any address
+open receieve upd socket
+bind with receieve_address
+
+send_to_address = 7000 , server_ip
+
+
+
+
+***************************************************************************************************************
+things that currently happen on client side:
+1. physics and collision of own player is performed against the level and against most entities:
+    * other players
+    * collectables (triggers a request collectable from server)
+    * jumppads (makes you jump locally)
+
+2. Spawning in a new place (I should change it that server decides where you spawn in order to prevent same place spawn)
+
+3. Animating / Shooting and blowing up of projectiles (ONLY VISUAL)
+
+TODO: 
+
+***************************************************************************************************************
+
+
+***************************************************************************************************************
+things that happen on server side:
+1. Approving of collecting a collectable - updating all clients who took it , also sending a message when it re-appears
+
+2. Causing damage to players (on server side projectile explosion) - updating all clients that some player got hirt, so the pain animation can be triggered
+
+3. Deciding that a player is dead - updating all clients with the new death of some client so that they would display death animation and update score.
+
+TODO: 
+
+***************************************************************************************************************
+           

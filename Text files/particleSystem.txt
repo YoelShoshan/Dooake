@@ -1,0 +1,44 @@
+/// particle system design
+
+
+
+vagary_projectile 
+{
+	PS	center_sphere
+	{		
+		material "Materials\PS\blah.mat"
+		start_dir_range  [-10 10] [-10 10] [-10 10]
+		life_time [350 450]
+		max_particles 500
+		transform_particles_with_origin
+	}
+
+	PS	rotating_stuff
+	{
+		time_delay 200 // start 200 ms later
+		material "Materials\PS\blah2.mat"
+		
+		start_dir_range  [-1 1] [-1 1] [-1 1]
+		start_vel_range [1 5]
+		life_time 800
+		max_particles 100
+
+		//transform_origin transform_type
+
+		// transform_origin rotate_around [start offset] [rotation speed] [participating axis]
+		transform_origin rotate_around [0,0,20] [12] [x y]
+
+		PS	stuff_rotating_around_the_rotating_stuff // :)
+		{
+			time_delay 50 // start 50 ms later
+			start_dir_range  [-1 1] [-1 1] [-1 1]
+			start_vel_range [1 5]
+			life_time 800
+			max_particles 100
+			
+			material "Materials\PS\blah3.mat"
+			transform_origin rotate_around [0,0,5] [50] [x y]
+			
+		}
+
+	}

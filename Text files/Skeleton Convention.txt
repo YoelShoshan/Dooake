@@ -1,0 +1,74 @@
+ Hips
+  *
+  ***Spine
+  *    *
+  *    **Spine1
+  *         *
+  *         **Spine2
+  *             *
+  *             **Spine3
+  *                 *
+  *                 ***Neck
+  *                 *    * 
+  *                 *    **Head
+  *                 *        *
+  *                 *        ***Head_End       
+  *                 *
+  *                 ***LeftShoulder
+  *                 *       * 
+  *                 *       **LeftArm
+  *                 *            *  
+  *                 *            **LeftArmRoll 
+  *                 *                  *
+  *                 *                  **LeftForeArm
+  *                 *                         *
+  *                 *                         **LeftForeArm1
+  *                 *                                * 
+  *                 *                                **LeftHand
+  *                 *                                     *
+  *                 *                                     **LeftWrist
+  *                 *
+  *                 ***RightShoulder 
+  *                         * 
+  *                         **RightArm
+  *                              *  
+  *                              **RightArmRoll 
+  *                                     *
+  *                                     **RightForeArm
+  *                                            *
+  *                                            **RightForeArm1
+  *                                                   * 
+  *                                                   **RightHand
+  *                                                         *
+  *                                                         **RightWrist
+  *
+  ***LeftUpLeg
+  *      *
+  *      **LeftUpLeg1
+  *            *
+  *            **LeftLeg
+  *                 *
+  *                 **LeftLegRoll
+  *                        *
+  *                        **LeftFoot
+  *                             *
+  *                             **LeftToes
+  *                                  *
+  *                                  ** LFoot_End
+  *
+  ***RightUpLeg
+         *
+         **RightUpLeg1
+               *
+               **RightLeg
+                     *
+                     **RightLegRoll
+                            *
+                            **RightFoot
+                                  *
+                                  **RightToes
+                                       *
+                                       ** RFoot_End
+   
+   
+                            
